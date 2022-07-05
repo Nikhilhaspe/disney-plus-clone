@@ -59,7 +59,11 @@ const Header = () => {
   return (
     <Nav>
       <Logo>
-        <img src="./images/logo.svg" alt="Disney+" />
+        <img
+          src="./images/logo.svg"
+          alt="Disney+"
+          onClick={() => navigate("/home")}
+        />
       </Logo>
       {!userName ? (
         <Login onClick={handleAuth}>Login</Login>
